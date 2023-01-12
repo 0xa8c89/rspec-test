@@ -24,4 +24,15 @@ describe Calculator do
       expect(calculator.multiply(9, 2, 3)).to eql(54)
     end
   end
+
+  describe '#subtract' do
+    it 'return quotent of two numbers' do
+      calculator = Calculator.new
+      expect(calculator.subtract(10, 2)).to eql(5)
+    end
+    it 'return quotent of more than two numbers' do
+      calculator = Calculator.new
+      expect(calculator.subtract(20, 5, 2)).to eql(2)
+    end
+  end
 end
